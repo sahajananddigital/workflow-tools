@@ -1,0 +1,122 @@
+:root {
+  /* WP Admin / Gutenberg Colors */
+  --color-primary: 207 89% 36%;
+  /* #007cba - WP Blue */
+  --color-primary-dark: 207 89% 29%;
+  /* #006ba1 */
+  --color-primary-light: 207 89% 96%;
+
+  --color-bg-base: 0 0% 95%;
+  /* #f0f0f1 - WP Admin BG */
+  --color-bg-subtle: 0 0% 100%;
+  /* #ffffff */
+  --color-bg-surface: 0 0% 100%;
+
+  --color-text-main: 210 10% 23%;
+  /* #3c434a */
+  --color-text-muted: 210 5% 40%;
+  /* #646970 */
+  --color-text-light: 210 5% 60%;
+
+  --color-border: 210 6% 87%;
+  /* #dcdcde */
+  --color-border-hover: 210 5% 55%;
+  /* #8c8f94 */
+
+  /* Status Colors */
+  --color-success: 130 50% 35%;
+  --color-warning: 40 100% 45%;
+  --color-error: 350 78% 55%;
+
+  /* Spacing - Dense for spreadsheet */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+
+  /* Typography */
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  --font-sm: 13px;
+  /* WP Default size */
+  --font-base: 14px;
+  --font-lg: 1.125rem;
+  --font-xl: 1.25rem;
+}
+
+/* Reset / Base */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: hsl(var(--color-bg-base));
+  color: hsl(var(--color-text-main));
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.4;
+  font-size: var(--font-sm);
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 500;
+  color: #1d2327;
+}
+
+input,
+button,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+/* WP Style Buttons */
+.btn-primary {
+  background-color: hsl(var(--color-primary));
+  color: white;
+  border: 1px solid hsl(var(--color-primary));
+  border-radius: 4px;
+  padding: 6px 12px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-primary:hover {
+  background-color: hsl(var(--color-primary-dark));
+  border-color: hsl(var(--color-primary-dark));
+}
+
+.btn-primary:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+
+/* WP Style Inputs */
+.form-input {
+  border: 1px solid #8c8f94;
+  border-radius: 4px;
+  padding: 6px 8px;
+  line-height: 1;
+  color: #2c3338;
+}
+
+.form-input:focus {
+  border-color: hsl(var(--color-primary));
+  box-shadow: 0 0 0 1px hsl(var(--color-primary));
+  outline: none;
+}
+
+.container {
+  max-width: 98%;
+  margin: 0 auto;
+  padding: var(--space-4);
+}

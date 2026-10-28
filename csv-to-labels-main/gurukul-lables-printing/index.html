@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSV to Labels</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; padding: 20px; }
+        canvas { border: 1px solid black; margin-top: 20px; max-width: 100%; background: white; }
+        button, input { margin: 10px; padding: 10px; font-size: 16px; }
+    </style>
+</head>
+<body>
+
+    <h2>CSV to Sticker Labels</h2>
+    <input type="file" id="csvFile" accept=".csv">
+    <button onclick="downloadCanvas()">Download as PNG</button>
+    <button onclick="downloadPDF()">Download as PDF</button>
+    
+    <canvas id="labelsCanvas" width="2480" height="3508"></canvas>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.2/papaparse.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>

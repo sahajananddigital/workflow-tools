@@ -1,0 +1,107 @@
+/* Spreadsheet / Table Styles */
+.spreadsheet-container {
+    overflow-x: auto;
+    border: 1px solid #c3c4c7;
+    /* WP Admin Border */
+    background: white;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .04);
+}
+
+.spreadsheet-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+    white-space: nowrap;
+}
+
+.spreadsheet-table th,
+.spreadsheet-table td {
+    padding: 8px 10px;
+    text-align: left;
+    border-bottom: 1px solid #c3c4c7;
+    border-right: 1px solid #c3c4c7;
+}
+
+.spreadsheet-table th {
+    background-color: white;
+    /* WP uses white for headers usually, or light grey */
+    font-weight: 600;
+    color: #1d2327;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    user-select: none;
+    border-bottom: 2px solid #c3c4c7;
+}
+
+.spreadsheet-table th:last-child,
+.spreadsheet-table td:last-child {
+    border-right: none;
+}
+
+.spreadsheet-table tbody tr:nth-child(even) {
+    background-color: #f6f7f7;
+    /* Striped rows like WP */
+}
+
+.spreadsheet-table tbody tr:hover {
+    background-color: #f0f0f1;
+}
+
+/* Cell Types */
+.cell-image img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 2px;
+    border: 1px solid #c3c4c7;
+}
+
+.cell-input {
+    width: 100%;
+    padding: 2px 4px;
+    border: 1px solid transparent;
+    background: transparent;
+    font-size: 13px;
+}
+
+.cell-input:hover {
+    border-color: #8c8f94;
+    background: white;
+}
+
+.cell-input:focus {
+    outline: none;
+    border-color: hsl(var(--color-primary));
+    background: white;
+    box-shadow: 0 0 0 1px hsl(var(--color-primary));
+}
+
+.status-badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 2px 6px;
+    font-weight: 500;
+    /* WP uses plain text status usually, but let's keep badges subtle */
+    background: transparent;
+    color: #646970;
+}
+
+.status-publish {
+    color: #007017;
+    font-weight: 600;
+}
+
+.status-draft {
+    color: #646970;
+}
+
+.toolbar {
+    display: flex;
+    gap: var(--space-4);
+    padding: 10px;
+    background: white;
+    border-bottom: 1px solid #c3c4c7;
+    align-items: center;
+    justify-content: space-between;
+}

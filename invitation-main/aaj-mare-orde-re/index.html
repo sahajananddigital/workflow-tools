@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selfie Generator</title>
+    <script src="./style.css"></script>
+    <script src="./index.umd.js"></script>
+	<style>
+		@font-face {
+    font-family: 'baloobhai';
+    src: url('BalooBhai2-Medium.ttf');
+}
+	</style>
+      <!-- Bootstrap core CSS -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container" style="">
+
+        <div class="row">
+
+			<div class="col-md-12">
+
+				<div class="py-0 text-center">
+					<h2 style="background: #005cb9" class=" rounded text-light pb-2 pt-2">Aaj Mare order( આજ મારે ઓરડે ) - Gurukul Invite</h2>
+				</div>
+				
+				
+				<div class="row">
+
+		            <div class="col-md-2 order-md-3 mb-4"> </div>
+					<div class="col-md-2 order-md-1 mb-4"></div>
+
+		            <div class="col-md-8 order-md-2">
+						<form method="POST" id="selfie_form">
+							<div class="row">
+								<div class="col-md-6 mb-3 offset-md-3">
+		                            <label for="date">Date</label>
+		                            <input type="text" class="form-control" name="date" id="date" value="તા. 13-03-2024, સોમવાર">
+		                        </div>
+		                    </div>
+							<div class="row">
+								<div class="col-md-6 mb-3 offset-md-3">
+		                            <label for="time">Time</label>
+		                            <input type="text" class="form-control" name="time" id="time" value="સાંજે, 8:30 થી 10:00 વાગ્યા સુધી...">
+		                        </div>
+		                    </div>
+							<div class="row">
+								<div class="col-md-6 mb-3 offset-md-3">
+		                            <label for="yajman">Yajaman</label>
+		                            <input type="text" class="form-control" name="yajman" id="yajman" value="પ.ભ.શ્રી ચતુરભાઈ ચોવટીયા ( મોં. 9924152617 )">
+		                        </div>
+		                    </div>
+							<div class="row">
+								<div class="col-md-6 mb-3 offset-md-3">
+		                            <label for="yajman2">Yajaman</label>
+		                            <input type="text" class="form-control" name="yajman2" id="yajman2" value="">
+		                        </div>
+		                    </div>
+							<div class="row">
+								<div class="col-md-6 mb-3 offset-md-3">
+		                            <label for="address">Address</label>
+		                            <!-- <input type="text"  name="address" id="address" value=""> -->
+									<textarea name="address" class="form-control" id="" cols="5" rows="5">A - 604, અનંતા ગ્રીન્સ, મેરિયોટ સ્કાય ની બાજુમાં, કેળવણી ધામ ની પાછળ, નિકોલ.</textarea>
+		                        </div>
+		                    </div>
+							<div class="row">
+								<div class="col-md-6 mb-3 offset-md-3">
+		                            <label for="address2">Address Line 2</label>
+		                            <!-- <input type="text"  name="address" id="address" value=""> -->
+									<textarea name="address2" class="form-control" id="" cols="5" rows="5"></textarea>
+		                        </div>
+		                    </div>
+							<div class="row">
+								<div class="col-md-6 mb-3 offset-md-3">
+		                            <label for="nondh">Khas Nodh</label>
+		                            <input type="text" class="form-control" name="nondh" id="nondh" value="નોંધ: નિકોલ ગુરુકુળ થી સંતો આશીર્વાદ આપવા પધારશે.">
+		                        </div>
+		                    </div>
+							<div class="row">
+								<div class="col-md-6 mb-3 offset-md-3">
+		                            <label for="audience">Mahila / Purush bhakto</label>
+		                            <input type="text" class="form-control" name="audience" id="audience" value="( જરૂરીતયાત પ્રમાણે ફેરફાર કરવો )પુરુષ અને મહીલાભકતો બંને લાભ લઇ શકશે.">
+		                        </div>
+		                    </div>
+							
+							<hr class="mb-4">
+
+		                    <div class="row">
+								<div class="col-md-6 mb-4">
+									<button type="submit" name="index" value="0" class="btn btn-lg btn-block downloadbtn text-white" style="background-color: #024c90;">Download Status Size</button>
+								</div>
+								<div class="col-md-6 mb-4">
+									<button type="submit" name="index" value="1" class="btn btn-lg btn-block downloadbtn text-white" style="background-color: #024c90;">Download Story Size</button>
+								</div>
+								
+							</div>
+		                    
+		                </form>
+		            </div>
+
+	        	</div>
+
+			</div>
+			
+			<div class="col-md-12">
+				<hr class="mb-1 mt-4">
+			</div>
+			<div class="text-center mx-auto">
+				<p>For Any IT related requirement Call <a href="tel://+917574841101"> +91 7574841101 </a></p>
+				<a class="" href="https://sahajananddigital.in/">
+					<img width="200px" class="img-fluid" src="./logo.png" alt="Sahajanand Digital">
+				</a>
+				<p>Developed By <a href="https://sahajananddigital.in"> Sahajanand Digital </a></p>
+			</div>
+		</div>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
+                crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        <script src="./script.js"></script>
+</body>
+</html>
