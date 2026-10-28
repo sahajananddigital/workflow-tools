@@ -1,0 +1,38 @@
+{
+  "name": "hr-management-system",
+  "version": "1.0.0",
+  "description": "HR Management System with Google Apps Script and React",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
+    "test": "vitest"
+  },
+  "dependencies": {
+    "clsx": "^2.1.1",
+    "jspdf": "^4.1.0",
+    "lucide-react": "^0.395.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "sql.js": "^1.13.0",
+    "tailwind-merge": "^2.3.0"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.2",
+    "@testing-library/user-event": "^14.6.1",
+    "@types/react": "^18.2.66",
+    "@types/react-dom": "^18.2.22",
+    "@vitejs/plugin-react": "^4.2.1",
+    "autoprefixer": "^10.4.19",
+    "gh-pages": "^6.3.0",
+    "jsdom": "^27.0.1",
+    "localforage": "^1.10.0",
+    "postcss": "^8.4.38",
+    "tailwindcss": "^3.4.4",
+    "vite": "^5.2.0",
+    "vite-plugin-singlefile": "^2.0.1",
+    "vitest": "^3.2.4"
+  }
+}

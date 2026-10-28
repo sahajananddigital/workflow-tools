@@ -1,0 +1,27 @@
+{
+    "manifest_version": 3,
+    "name": "WA Bulk Sender",
+    "version": "0.2.18",
+    "description": "Bulk WhatsApp Sender with Spintax and Media Support",
+    "permissions": [
+        "activeTab",
+        "scripting",
+        "storage"
+    ],
+    "host_permissions": [
+        "https://web.whatsapp.com/*"
+    ],
+    "action": {
+        "default_popup": "index.html"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://web.whatsapp.com/*"
+            ],
+            "js": [
+                "content.js"
+            ]
+        }
+    ]
+}

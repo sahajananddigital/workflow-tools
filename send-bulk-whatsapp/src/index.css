@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        @apply bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white min-h-screen text-slate-100;
+        width: 800px;
+        height: 600px;
+        overflow: hidden;
+    }
+
+    #root {
+        height: 100%;
+        overflow-y: auto;
+    }
+}
